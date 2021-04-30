@@ -50,4 +50,4 @@ jobs:
         app-name: 'webhook-app'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_2d2ff688159145cb8fa436910b5f0ab4 }}
-        package: '*.war'
+        package: '${{ github.workspace }}/target/*.jar'
